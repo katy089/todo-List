@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>ToDo List</title>
+</head>
+<body>
+  <h1>ToDo List</h1>
+  <form id="task-form">
+    <input type="text" id="task" placeholder="Enter task message" required>
+    <input type="date" id="due-date" required>
+    <button type="submit">Add Task</button>
+  </form>
+  <select id="sort-select">
+    <option value="messageAsc">Sort by Message (A-Z)</option>
+    <option value="messageDesc">Sort by Message (Z-A)</option>
+    <option value="dueDateAsc">Sort by Due Date (Ascending)</option>
+    <option value="dueDateDesc">Sort by Due Date (Descending)</option>
+    <option value="creationDateAsc">Sort by Creation Date (Oldest First)</option>
+    <option value="creationDateDesc">Sort by Creation Date (Newest First)</option>
+    <option value="priorityFirst">Sort by Priority First</option>
+  </select>
+  <ul id="task-list"></ul>
+  <script src="./js/index.js"></script>
+</body>
+</html>
